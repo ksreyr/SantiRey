@@ -5,7 +5,8 @@
 3. [Technologies used](#Technologies_used)
 
 ## <div id= "Example"></div> 1 Example
-![](https://i.imgur.com/OnMABhp.gif)
+
+<img src="https://i.imgur.com/ozwj5So.gif" width="500px">
 
 
 ## <div id= "Description"></div> 2 Description
