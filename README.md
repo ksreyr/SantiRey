@@ -5,7 +5,8 @@
 3. [Technologies used](#Technologies_used)
 
 ## <div id= "Example"></div> 1 Example
-![](https://i.imgur.com/Clmat1p.gif)
+![](https://i.imgur.com/OnMABhp.gif)
+
 
 ## <div id= "Description"></div> 2 Description
 This is a simple Website for personal presentation, it is planed like a single page. i have used Bootstrap and Fontawesome in order to get a easily design process.
