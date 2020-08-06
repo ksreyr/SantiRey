@@ -1,4 +1,14 @@
-# Personal Webpage presentation
+### 👋 Hi im Kevin Santiago Rey
+![](https://i.imgur.com/P6EtmaL.png)
+
+computer science student and sound engineer. I am passionate about working with low-level languages and functional languages. I have worked in the software development area for two years and really like fun to programming.
+
+### You can found me an:
+[twitter](https://)🗣
+
+[flickr](https://)👁
+
+[github](https://)🧑‍💻
 ## Content
 1. [Example](#Example)
 2. [Description](#Description)
