@@ -93,7 +93,9 @@ body {
 
 	color: white;
 }
-
+#footer {
+	min-height: auto;
+}
 #footer ul {
 	display: inline-block;
 	margin: 9px;
