@@ -25,6 +25,8 @@ Writting about programming in [medium](https://medium.com/@ksreyr/) as @ksreyr ð
 
 
 ## <div id= "Website"></div> 3 Website
+On the following page you can find more information about me, about some projects and papers that I have done. If you have any questions don't hesitate to write me.
+
 This is a simple Website for personal presentation, it is planed like a single page. i have used Bootstrap and Fontawesome in order to get a easily design process.
 
 * [Website link]( https://santirey.github.io/SantiRey/)
