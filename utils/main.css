@@ -143,6 +143,9 @@ ul {
 	right: 0px;
 	bottom: 0px;
 }
+#experienceCarten {
+	max-width: max-content;
+}
 .icons:hover {
 	max-height: 170px;
 	min-height: 170px;
