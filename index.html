@@ -21,7 +21,7 @@
 		<link href="assets/css/all.css" rel="stylesheet" />
 		<title>Santiago Rey</title>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#navbar" data-offset="100">
 		<!--Navar-->
 		<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav">
 			<button
@@ -46,16 +46,13 @@
 
 				<ul class="navbar-nav ml-auto mt-2 mt-lg-0 form-inline">
 					<li class="nav-item">
-						<a class="nav-link" href="#">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Projects</a>
+						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li>
-						<a class="nav-link" href="#">Papers</a>
+						<a class="nav-link" href="#papers">Papers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#project">Projects</a>
 					</li>
 				</ul>
 			</div>
@@ -117,238 +114,247 @@
 		</div>
 		<!--/Image-->
 		<!--About-->
-		<div class="container border mt-4">
-			<div class="row text-uppercase display-4">
-				<div class="col-sm" id="title">
-					<h1>About me</h1>
-					<hr class="my-2" />
-				</div>
-			</div>
-			<div class="row">
-				<p>
-					<button
-						class="btn btn-outline-success ml-3"
-						id="button"
-						type="button"
-						data-toggle="collapse"
-						data-target="#collapseSpanish"
-						aria-expanded="true"
-						aria-controls="collapseSpanish"
-					>
-						Spanisch Version
-					</button>
-					<button
-						class="btn btn-outline-success"
-						id="button"
-						type="button"
-						data-toggle="collapse"
-						data-target="#collapseEnglish"
-						aria-expanded="false"
-						aria-controls="collapseEnglish"
-					>
-						English Version
-					</button>
-				</p>
-				<div class="collapse" id="collapseSpanish">
-					<div class="card card-body">
-						Ingeniero de Sonido de la universdad de San Buenaventura de Bogota
-						Colombia. Representante de Colombia en la competencia internacional
-						de Grabacion y Mezcla de los angeles. Formación en el Area de
-						Acustica Arquitectonica, Electronica Digital y Produccion de audio.
-						Actualmente estudiando de Informatica en la Universidad de Bremen.
-						Donde sus intereses han sido en el procesamiento digital de señales
-						y el desarrollo de software en lenguajes de bajo nivel y estudio de
-						lenguajes funcionales para el desarrollo Web. Escritor en Medium.
+		<section id="about">
+			<div class="container border mt-4">
+				<div class="row text-uppercase display-4">
+					<div class="col-sm" id="title">
+						<h1>About me</h1>
+						<hr class="my-2" />
 					</div>
 				</div>
-				<div class="collapse" id="collapseEnglish">
-					<div class="card card-body">
-						Sound Engienner from the San Buenaventura University Bogotá
-						Colombia. Colombian participan in the Wolrd Competion of AES in Los
-						Angeles, California. proficiency in areas such as, Architectural
-						Acoustics, Digital Electronics and Audio Production. Currently
-						student Computer Science at the University of Bremen. Where his
-						interests have been in digital signal processing and software
-						development in low-level languages, have use functional programming
-						for Web development make with success projects in the area Data
-						Science.
+				<div class="row">
+					<p>
+						<button
+							class="btn btn-outline-success ml-3"
+							id="button"
+							type="button"
+							data-toggle="collapse"
+							data-target="#collapseSpanish"
+							aria-expanded="true"
+							aria-controls="collapseSpanish"
+						>
+							Spanisch Version
+						</button>
+						<button
+							class="btn btn-outline-success"
+							id="button"
+							type="button"
+							data-toggle="collapse"
+							data-target="#collapseEnglish"
+							aria-expanded="false"
+							aria-controls="collapseEnglish"
+						>
+							English Version
+						</button>
+					</p>
+					<div class="collapse" id="collapseSpanish">
+						<div class="card card-body">
+							Ingeniero de Sonido de la universdad de San Buenaventura de Bogota
+							Colombia. Representante de Colombia en la competencia
+							internacional de Grabacion y Mezcla de los angeles. Formación en
+							el Area de Acustica Arquitectonica, Electronica Digital y
+							Produccion de audio. Actualmente estudiando de Informatica en la
+							Universidad de Bremen. Donde sus intereses han sido en el
+							procesamiento digital de señales y el desarrollo de software en
+							lenguajes de bajo nivel y estudio de lenguajes funcionales para el
+							desarrollo Web. Escritor en Medium.
+						</div>
+					</div>
+					<div class="collapse" id="collapseEnglish">
+						<div class="card card-body">
+							Sound Engienner from the San Buenaventura University Bogotá
+							Colombia. Colombian participan in the Wolrd Competion of AES in
+							Los Angeles, California. proficiency in areas such as,
+							Architectural Acoustics, Digital Electronics and Audio Production.
+							Currently student Computer Science at the University of Bremen.
+							Where his interests have been in digital signal processing and
+							software development in low-level languages, have use functional
+							programming for Web development make with success projects in the
+							area Data Science.
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
+		</section>
 		<!--/About-->
 		<!--papers-->
-
-		<div class="container border mt-4">
-			<div class="row text-uppercase display-4">
-				<div class="col-sm" id="title">
-					<h1>papers</h1>
-					<hr class="my-2" />
+		<section id="papers">
+			<div class="container border mt-4">
+				<div class="row text-uppercase display-4">
+					<div class="col-sm" id="title">
+						<h1>papers</h1>
+						<hr class="my-2" />
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="card m-1" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="images/nlp.png" class="card-img" alt="..." />
+				<div class="row">
+					<div class="card m-1" style="max-width: 540px;">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<img src="images/nlp.png" class="card-img" alt="..." />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">
+										Natural language classifier based on Reddit posts for
+										information retrieval
+									</h5>
+									<p class="card-text">
+										This work aims at trying to interpret input from user by
+										deriving benefit from textual clues embedded in the input by
+										using a collected dataset from many thousands of reddit
+										posts in three different subreddits: (politics, datascience,
+										listentothis). We also discuss the implication concluded
+										from the picked classifier for training the datasets and how
+										it was optimal for this work in comparison with other
+										classifiers.
+									</p>
+									<p class="card-text">
+										<a href="#" class="btn btn-outline-success"
+											>go to Project</a
+										>
+									</p>
+								</div>
+							</div>
 						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">
-									Natural language classifier based on Reddit posts for
-									information retrieval
-								</h5>
-								<p class="card-text">
-									This work aims at trying to interpret input from user by
-									deriving benefit from textual clues embedded in the input by
-									using a collected dataset from many thousands of reddit posts
-									in three different subreddits: (politics, datascience,
-									listentothis). We also discuss the implication concluded from
-									the picked classifier for training the datasets and how it was
-									optimal for this work in comparison with other classifiers.
-								</p>
-								<p class="card-text">
-									<a href="#" class="btn btn-outline-success">go to Project</a>
-								</p>
+					</div>
+					<div class="card ml-auto" style="max-width: 540px;">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<img src="images/f.png" class="card-img" alt="..." />
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title">
+										Desing and Implementation of Acoustics boces with golden
+										proportions
+									</h5>
+									<p class="card-text">
+										The following paper presents the design and process of
+										construction of a subwoofer which incorporates all the
+										theory related to the Fibonacci spiral in order to minimize
+										the influence of the normal modes of vibration in chambers,
+										making then the frequency response more accessible to
+										prediction. This work presents the acoustic box design using
+										the theory related to band pass boxes studying each one of
+										the phenomena involved.
+									</p>
+									<p class="card-text">
+										<a href="#" class="btn btn-outline-success"
+											>go to Project</a
+										>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="card ml-auto" style="max-width: 540px;">
-					<div class="row no-gutters">
-						<div class="col-md-4">
-							<img src="images/f.png" class="card-img" alt="..." />
-						</div>
-						<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">
-									Desing and Implementation of Acoustics boces with golden
-									proportions
-								</h5>
-								<p class="card-text">
-									The following paper presents the design and process of
-									construction of a subwoofer which incorporates all the theory
-									related to the Fibonacci spiral in order to minimize the
-									influence of the normal modes of vibration in chambers, making
-									then the frequency response more accessible to prediction.
-									This work presents the acoustic box design using the theory
-									related to band pass boxes studying each one of the phenomena
-									involved.
-								</p>
-								<p class="card-text">
-									<a href="#" class="btn btn-outline-success">go to Project</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
-		</div>
+		</section>
 		<!--/papers-->
 
 		<!--projects-->
-
-		<div class="container border mt-4">
-			<div class="row text-uppercase display-4">
-				<div class="col-sm" id="title">
-					<h1>projects</h1>
-					<hr class="my-2" />
+		<section id="project">
+			<div class="container border mt-4">
+				<div class="row text-uppercase display-4">
+					<div class="col-sm" id="title">
+						<h1>projects</h1>
+						<hr class="my-2" />
+					</div>
+				</div>
+				<div class="row" id="cards">
+					<div class="col-md-4 mb-4 mt-4">
+						<div class="card">
+							<img src="images/tcml.gif" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h4 class="card-title text-center mb-0">
+									Text Classifier with Machine Learning
+								</h4>
+								<div class="badges">
+									<span class="badge badge-success">Machine Learning</span>
+									<span class="badge badge-primary">Web scraping</span>
+								</div>
+								<p class="card-text">
+									build of a text classifier using models of machine learning
+									and web scraping from Reddit trough a Telegram Bot
+								</p>
+								<a
+									href="https://github.com/SantiRey/TextClasifficationRedditTelegram"
+									class="btn btn-outline-success"
+									>go to Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4 mt-4">
+						<div class="card">
+							<img src="images/shop.gif" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<div class="onelinetitles">
+									<h4 class="card-title text-center mb-0">
+										Web Applications
+									</h4>
+								</div>
+								<div class="badges">
+									<span class="badge badge-primary">WildFly </span>
+									<span class="badge badge-success">Java JEE</span>
+								</div>
+								<p class="card-text">
+									build a small approach of a online shop with wildfly and Java
+									EE, JFS and JPA Postgres as DataBase. user verwaltung and
+									Product managment.
+								</p>
+								<a
+									href="https://github.com/SantiRey/AdministrationWildflyProjekt"
+									class="btn btn-outline-success"
+									>go to Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4 mt-4">
+						<div class="card">
+							<img src="images/ss.gif" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<div class="onelinetitles">
+									<h4 class="card-title text-center mb-0">
+										Game Development
+									</h4>
+								</div>
+								<div class="badges">
+									<span class="badge badge-primary">Libgdx </span>
+									<span class="badge badge-success">SpringBot</span>
+								</div>
+								<p class="card-text">
+									build of a space navies game with Libgdx and SpringBot as
+									Server. Using a Rest Api for the syncronasing of the clinet
+								</p>
+								<a href="" class="btn btn-outline-success">go to Project</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4 mt-4">
+						<div class="card">
+							<img src="images/tcml.gif" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<div class="onelinetitles">
+									<h4 class="card-title text-center mb-0">
+										Funtional Programing
+									</h4>
+								</div>
+								<div class="badges">
+									<span class="badge badge-danger">Haskell</span>
+									<span class="badge badge-danger">Skala</span>
+								</div>
+								<p class="card-text">
+									practic examples of a funtional programing with haskell.
+								</p>
+								<a href="#" class="btn btn-outline-success">go to Project</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row" id="cards">
-				<div class="col-md-4 mb-4 mt-4">
-					<div class="card">
-						<img src="images/tcml.gif" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h4 class="card-title text-center mb-0">
-								Text Classifier with Machine Learning
-							</h4>
-							<div class="badges">
-								<span class="badge badge-success">Machine Learning</span>
-								<span class="badge badge-primary">Web scraping</span>
-							</div>
-							<p class="card-text">
-								build of a text classifier using models of machine learning and
-								web scraping from Reddit trough a Telegram Bot
-							</p>
-							<a
-								href="https://github.com/SantiRey/TextClasifficationRedditTelegram"
-								class="btn btn-outline-success"
-								>go to Project</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 mb-4 mt-4">
-					<div class="card">
-						<img src="images/shop.gif" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<div class="onelinetitles">
-								<h4 class="card-title text-center mb-0">
-									Web Applications
-								</h4>
-							</div>
-							<div class="badges">
-								<span class="badge badge-primary">WildFly </span>
-								<span class="badge badge-success">Java JEE</span>
-							</div>
-							<p class="card-text">
-								build a small approach of a online shop with wildfly and Java
-								EE, JFS and JPA Postgres as DataBase. user verwaltung and
-								Product managment.
-							</p>
-							<a
-								href="https://github.com/SantiRey/AdministrationWildflyProjekt"
-								class="btn btn-outline-success"
-								>go to Project</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 mb-4 mt-4">
-					<div class="card">
-						<img src="images/ss.gif" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<div class="onelinetitles">
-								<h4 class="card-title text-center mb-0">
-									Game Development
-								</h4>
-							</div>
-							<div class="badges">
-								<span class="badge badge-primary">Libgdx </span>
-								<span class="badge badge-success">SpringBot</span>
-							</div>
-							<p class="card-text">
-								build of a space navies game with Libgdx and SpringBot as
-								Server. Using a Rest Api for the syncronasing of the clinet
-							</p>
-							<a href="" class="btn btn-outline-success">go to Project</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 mb-4 mt-4">
-					<div class="card">
-						<img src="images/tcml.gif" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<div class="onelinetitles">
-								<h4 class="card-title text-center mb-0">
-									Funtional Programing
-								</h4>
-							</div>
-							<div class="badges">
-								<span class="badge badge-danger">Haskell</span>
-								<span class="badge badge-danger">Skala</span>
-							</div>
-							<p class="card-text">
-								practic examples of a funtional programing with haskell.
-							</p>
-							<a href="#" class="btn btn-outline-success">go to Project</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		</section>
 		<!--/projects-->
 
 		<!--Footer-->
