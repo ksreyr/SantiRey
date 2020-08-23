@@ -103,17 +103,12 @@
 					</div>
 				</div>
 				<div class="contenedor mr-4 video">
-					<video
-						width="400"
-						autoplay="autoplay"
-						loop
-						muted
-						poster
-						src="images/video.mov"
-						type="video/quicktime"
-						crossorigin="anonymous"
-						Secure
-					></video>
+					<video width="400" autoplay="autoplay" loop muted poster>
+						<source type="video/quicktime" src="images/video.mov" />
+						<source type="video/mp4" src="images/mp4.mp4" />
+						<source type="video/webm" src="images/webm.webm" />
+						<source type="video/ogg" src="images/ogg.ogg" />
+					</video>
 				</div>
 				<div class="contenedor mr-4">
 					<h1>Hello, world! <span class="typed"></span></h1>
