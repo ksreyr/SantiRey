@@ -67,8 +67,11 @@ ul {
 	height: 250px;
 }
 @media (max-width: 700px) {
+	#imageProfilContainer {
+		border-right: 0px solid #e0ece4;
+	}
 	.image-profile {
-		margin-left: 28vh;
+		margin-left: 18vh;
 		border-radius: 50%;
 		object-fit: cover;
 		max-width: 90px;
