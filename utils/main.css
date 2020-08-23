@@ -64,7 +64,7 @@ ul {
 }
 @media (max-width: 700px) {
 	.video {
-		margin-left: 25vh;
+		margin-left: 39%;
 		width: 70px;
 		height: 70px;
 	}
