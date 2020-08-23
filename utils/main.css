@@ -143,6 +143,19 @@ ul {
 	right: 0px;
 	bottom: 0px;
 }
+.icons:hover {
+	max-height: 170px;
+	min-height: 170px;
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(0%);
+}
+.icons {
+	max-height: 170px;
+	min-height: 170px;
+	object-fit: cover;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
 #footer {
 	min-height: auto;
 	background-color: #fcf8e8;
