@@ -1,11 +1,14 @@
-## <div id= "Description"></div> 👋 Hi, im Kevin Santiago Rey
+---
+title: Web self presentation
+---
+## <div id= "Description"></div> 👋 Hi, im Kevin Santiago Rey, hier you can find a little about me.
 ![](https://i.imgur.com/P6EtmaL.png)
 
-Computer science student and sound engineer. I am passionate about working with low-level languages like C ++ and functional languages like Haskell. I have been working in the software development area for two years with technologies such as Java EE, JSF and Automated Test with Selenium.
+Computer science student and sound engineer. I am passionate about working with low-level languages like C ++ and functional languages. I have been working in the software development area for two years with technologies such as Java EE, JSF and Automated Test with Selenium.
 
 If you have any questions or can help you just write me, I love being able to share and help others. If you have any suggestions and comments, they are not only totally welcome, but also highly appreciated.
 
-### You can found me an:
+### You can found me in social-networks
 I love making contributions in the programming area, for that reason I have various ways where I always try to contribute to the community. for example:
 
 Sharing Information in [twitter](https://twitter.com/ksreyr) as @ksreyr 🗣
@@ -13,24 +16,47 @@ Sharing Information in [twitter](https://twitter.com/ksreyr) as @ksreyr 🗣
 Sharing some hobbies in[flickr](https://www.flickr.com/people/santirey/) as Santiago Rey 👁
 
 Writting about programming in [medium](https://medium.com/@ksreyr/) as @ksreyr 🧑‍💻
-## Content of this page
+
+---
+## <div id= "Content"></div> 2 Content
 1. [Description](#Description)
-2. [Overview](#Example)
-3. [Website](#Website)
-4. [Technologies used](#Technologies_used)
+2. [Content](#Content)
+3. [Overview](#Example)
+4. [Installation](#installation)
+6. [How to use](#howu)
+7. [How contributing](#howc)
+8. [Technologies used](#Technologies_used)
+9. [Licens](#licens)
 
-## <div id= "Example"></div> 2 Overview
+## <div id= "Example"></div> 3 Overview
 
-<img src="https://i.imgur.com/ozwj5So.gif" width="500px">
+On the following page you can find more information about me, about some projects and papers that I have done:
+* Maching Lerning.
+* Java EE.
+* SpringBoot.
+* Haskell and Skala.
+* Web Games Development.
 
-
-## <div id= "Website"></div> 3 Website
-On the following page you can find more information about me, about some projects and papers that I have done. If you have any questions don't hesitate to write me.
-
-This is a simple Website for personal presentation, it is planed like a single page. i have used Bootstrap and Fontawesome in order to get a easily design process.
+If you have any questions don't hesitate to write me.
+### Link to the website:
 
 * [Website link]( https://santirey.github.io/SantiRey/)
 
-## <div id= "Technologies_used"></div> 4 Technologies used
+
+<img src="https://i.imgur.com/ozwj5So.gif" width="500px" loop>
+
+## <div id= "installation"></div> 4 Installation
+You need just to clone the repository. please do not use my personal Fotos but if do you need something more you are welcome to modify this website. 
+
+It is possible to renderthe index.html just with internet connection, the internet connection is necessary in order to get some Framework and Javascript libraries.
+## <div id= "howu"></div> 5 How to use
+Assest you can find the css Data for icon, in images of course you can find the images for this Website and in the html Document it is possible to find the Script for Bootsptrap and Javascript Typed library to make some transitions.
+## <div id= "howc"></div> 6 How contributing
+It is posible make pull request, aou are welcome to writte me. all kind of contribution is really welcome.
+
+## <div id= "howu"></div> 8 Technologies used
 * [Bootstrap](https://getbootstrap.com)
 * [Fontawesome](https://fontawesome.com)
+
+## <div id= "licens"></div> 7 Licens
+Images are reserved, but code it is free.
