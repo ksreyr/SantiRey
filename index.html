@@ -80,11 +80,14 @@
 					<img src="images/computer.png" class="d-block w-100" alt="..." />
 					<div class="carousel-caption d-none d-md-block">
 						<h5 id="footerLetters">Software and Machine Learning Projects</h5>
-						<a
-							href="https://github.com/SantiRey"
-							class="btn btn-outline-success"
-							>visit my github</a
-						>
+
+						<section id="buttonsphotos">
+							<a
+								href="https://github.com/SantiRey"
+								class="btn btn-outline-success buttonsphotos"
+								>visit my github</a
+							>
+						</section>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -93,7 +96,7 @@
 						<h5 id="footerLetters">Sound engiennering and Acoustic Projects</h5>
 						<a
 							href="https://www.youtube.com/watch?v=cLXUxUJ1iLU"
-							class="btn btn-outline-success"
+							class="btn btn-outline-success buttonsphotos"
 							>take a look in youtube</a
 						>
 					</div>
@@ -105,7 +108,7 @@
 						<p>
 							<a
 								href="https://www.flickr.com/photos/santirey"
-								class="btn btn-outline-success"
+								class="btn btn-outline-success buttonsphotos"
 								>see my Flickr</a
 							>
 						</p>
@@ -133,7 +136,7 @@
 		<!--/Image-->
 		<!--About-->
 		<section id="about">
-			<div class="container border mt-4">
+			<div class="container mt-4" id="border">
 				<div class="row text-uppercase display-4">
 					<div class="col-sm" id="title">
 						<h1>About me</h1>
@@ -143,7 +146,7 @@
 				<div class="row">
 					<p>
 						<button
-							class="btn btn-outline-success ml-3"
+							class="btn btn-outline-success ml-3 buttonsaboutme"
 							id="button"
 							type="button"
 							data-toggle="collapse"
@@ -154,7 +157,7 @@
 							Spanish Version
 						</button>
 						<button
-							class="btn btn-outline-success"
+							class="btn btn-outline-success buttonsaboutme"
 							id="button"
 							type="button"
 							data-toggle="collapse"
@@ -197,7 +200,7 @@
 		<!--/About-->
 		<!--papers-->
 		<section id="papers">
-			<div class="container border mt-4">
+			<div class="container mt-4" id="border">
 				<div class="row text-uppercase display-4">
 					<div class="col-sm" id="title">
 						<h1>papers</h1>
@@ -205,62 +208,66 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="card m-1" style="max-width: 540px;">
-						<div class="row no-gutters">
-							<div class="col-md-4">
-								<img src="images/nlp.png" class="card-img" alt="..." />
-							</div>
-							<div class="col-md-8">
-								<div class="card-body">
-									<h5 class="card-title">
-										Natural language classifier based on Reddit posts for
-										information retrieval
-									</h5>
-									<p class="card-text">
-										This work aims at trying to interpret input from user by
-										deriving benefit from textual clues embedded in the input by
-										using a collected dataset from many thousands of reddit
-										posts in three different subreddits: (politics, datascience,
-										listentothis). We also discuss the implication concluded
-										from the picked classifier for training the datasets and how
-										it was optimal for this work in comparison with other
-										classifiers.
-									</p>
-									<p class="card-text">
-										<a href="#" class="btn btn-outline-success"
-											>go to Project</a
-										>
-									</p>
+					<div class="col-sm">
+						<div class="card mb-2" style="min-height: 450px;">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="images/nlp.png" class="card-img" alt="..." />
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">
+											Natural language classifier based on Reddit posts for
+											information retrieval
+										</h5>
+										<p class="card-text">
+											This work aims at trying to interpret input from user by
+											deriving benefit from textual clues embedded in the input
+											by using a collected dataset from many thousands of reddit
+											posts in three different subreddits: (politics,
+											datascience, listentothis). We also discuss the
+											implication concluded from the picked classifier for
+											training the datasets and how it was optimal for this work
+											in comparison with other classifiers.
+										</p>
+										<p class="card-text">
+											<a href="#" class="btn btn-outline-success"
+												>go to Project</a
+											>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="card ml-auto" style="max-width: 540px;">
-						<div class="row no-gutters">
-							<div class="col-md-4">
-								<img src="images/f.png" class="card-img" alt="..." />
-							</div>
-							<div class="col-md-8">
-								<div class="card-body">
-									<h5 class="card-title">
-										Desing and Implementation of Acoustics boces with golden
-										proportions
-									</h5>
-									<p class="card-text">
-										The following paper presents the design and process of
-										construction of a subwoofer which incorporates all the
-										theory related to the Fibonacci spiral in order to minimize
-										the influence of the normal modes of vibration in chambers,
-										making then the frequency response more accessible to
-										prediction. This work presents the acoustic box design using
-										the theory related to band pass boxes studying each one of
-										the phenomena involved.
-									</p>
-									<p class="card-text">
-										<a href="#" class="btn btn-outline-success"
-											>go to Project</a
-										>
-									</p>
+					<div class="col-sm">
+						<div class="card mb-2" style="min-height: 450px;">
+							<div class="row no-gutters">
+								<div class="col-md-4">
+									<img src="images/f.png" class="card-img" alt="..." />
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">
+											Desing and Implementation of Acoustics boces with golden
+											proportions
+										</h5>
+										<p class="card-text">
+											The following paper presents the design and process of
+											construction of a subwoofer which incorporates all the
+											theory related to the Fibonacci spiral in order to
+											minimize the influence of the normal modes of vibration in
+											chambers, making then the frequency response more
+											accessible to prediction. This work presents the acoustic
+											box design using the theory related to band pass boxes
+											studying each one of the phenomena involved.
+										</p>
+										<p class="card-text">
+											<a href="#" class="btn btn-outline-success"
+												>go to Project</a
+											>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -272,7 +279,7 @@
 
 		<!--projects-->
 		<section id="project">
-			<div class="container border mt-4">
+			<div class="container mt-4" id="border">
 				<div class="row text-uppercase display-4">
 					<div class="col-sm" id="title">
 						<h1>projects</h1>
@@ -386,7 +393,7 @@
 		<!--/projects-->
 		<!--Experiences-->
 		<section id="experience">
-			<div class="container border mt-4">
+			<div class="container mt-4" id="border">
 				<div class="row text-uppercase display-4">
 					<div class="col-sm" id="title">
 						<h1>Experience with</h1>
@@ -491,7 +498,10 @@
 			<div class="container mt-4">
 				<div class="row">
 					<div class="col-6 col-lg lead mt-3" id="credits">
-						<p>created by Kevin Santiago Rey</p>
+						<p>
+							created with <span class="fas fa-heart"></span> by Kevin Santiago
+							Rey
+						</p>
 					</div>
 					<div class="col-6 col-lg-8">
 						<ul class="navbar-nav">
@@ -509,6 +519,12 @@
 							</li>
 							<li class="nav-item active">
 								<a href="https://github.com/SantiRey" class="fab fa-github"></a>
+							</li>
+							<li class="nav-item active">
+								<a
+									href="https://github.com/SantiRey"
+									class="fab fa-linkedin"
+								></a>
 							</li>
 						</ul>
 					</div>

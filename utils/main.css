@@ -18,8 +18,16 @@ body {
 #footerLetters {
 	color: #e0ece4;
 }
-.border {
+#border {
 	border: 2px solid #e0ece4;
+	border-radius: 10px 20px 20px 5px;
+	box-shadow: 0.1em 0.1em 15px 0.0025px #e0ece4;
+}
+.buttonsphotos {
+	box-shadow: 0.1em 0.1em 15px 1px #111111;
+}
+.buttonsaboutme {
+	box-shadow: 0.1em 0.1em 2px 0.0025px #e0ece4;
 }
 
 ul {
