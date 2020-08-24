@@ -4,6 +4,7 @@
 }
 body {
 	font-family: "Lato", sans-serif;
+	transition: 0.3s;
 }
 @media (min-width: 700px) {
 	.image-profile {
@@ -127,11 +128,10 @@ ul {
 	min-height: 550px;
 }
 #cards .card img {
-	min-height: 550px;
 	width: auto;
 	object-fit: cover;
-	min-height: 250px;
-	max-height: 250px;
+	min-height: 280px;
+	max-height: 280px;
 }
 .card-text {
 	text-align: justify;
@@ -147,17 +147,22 @@ ul {
 	max-width: max-content;
 }
 .icons:hover {
-	max-height: 170px;
-	min-height: 170px;
+	max-height: 250px;
+	min-height: 250px;
 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(0%);
+	opacity: 1;
+	transition: 0.3s;
 }
 .icons {
-	max-height: 170px;
-	min-height: 170px;
+	box-shadow: 0 0 0.5em 0.7em #e0ece4;
+	max-height: 200px;
+	min-height: 200px;
 	object-fit: cover;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 	filter: grayscale(100%);
+	opacity: 0.6;
+	transition: 0.3s;
 }
 #footer {
 	min-height: auto;
@@ -184,4 +189,85 @@ ul {
 }
 #inputText {
 	min-height: 70px;
+}
+
+/*
+*/
+
+/* Inline photos */
+
+.inline-photo {
+	box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+
+	opacity: 0;
+	/*from is take
+	-webkit-transform: translateY(1em) rotateZ(-30deg);*/
+	/*Start Point*/
+	transform: translateY(20em) translatex(-30em) rotateZ(-30deg);
+
+	-webkit-transition: opacity 2s 0.5s ease-out, -webkit-transform 3s 0.1s;
+
+	transition: opacity 2s 0.5s ease-out, -webkit-transform 4s 0.25s;
+
+	transition: transform 3s 0.25s, opacity 2s 0.5s ease-out;
+
+	transition: transform 3s 0.25s, opacity 2s 0.5s ease-out,
+		-webkit-transform 3s 0.25s;
+
+	will-change: transform, opacity;
+}
+
+.inline-photo2 {
+	box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+
+	opacity: 0;
+	/*from is take
+	-webkit-transform: translateY(1em) rotateZ(-30deg);*/
+	/*Start Point*/
+	transform: translateY(-5em) translatex(30em) rotateZ(50deg);
+
+	-webkit-transition: opacity 2s 1s ease-out, -webkit-transform 3s 0.1s;
+
+	transition: opacity 2s 1s ease-out, -webkit-transform 4s 0.25s;
+
+	transition: transform 3s 0.25s, opacity 2s 0.5s ease-out;
+
+	transition: transform 3s 0.25s, opacity 2s 0.5s ease-out,
+		-webkit-transform 3s 0.25s;
+
+	will-change: transform, opacity;
+}
+.inline-photo3 {
+	box-shadow: 1em 1em 2em 0.25em rgba(0, 0, 0, 0.2);
+
+	opacity: 0;
+	/*from is take
+	-webkit-transform: translateY(1em) rotateZ(-30deg);*/
+	/*Start Point*/
+	transform: translateY(24em) translatex(-30em) rotateZ(15deg);
+
+	-webkit-transition: opacity 2s 0.5s ease-out, -webkit-transform 3s 0.1s;
+
+	transition: opacity 2s 0.5s ease-out, -webkit-transform 4s 0.25s;
+
+	transition: transform 3s 0.25s, opacity 2s 0.5s ease-out;
+
+	transition: transform 3s 0.25s, opacity 2s 0.5s ease-out,
+		-webkit-transform 3s 0.25s;
+
+	will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+	opacity: 1;
+	transform: rotateZ(-1deg);
+}
+
+.inline-photo2.is-visible {
+	opacity: 1;
+	transform: rotateZ(0deg);
+}
+.inline-photo3.is-visible {
+	opacity: 1;
+	transform: rotateZ(0.6deg);
 }
