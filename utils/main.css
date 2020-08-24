@@ -279,9 +279,9 @@ ul {
 
 .inline-photo2.is-visible {
 	opacity: 1;
-	transform: rotateZ(-0.2deg);
+	transform: rotateZ(0deg);
 }
 .inline-photo3.is-visible {
 	opacity: 1;
-	transform: rotateZ(0.6deg);
+	transform: rotateZ(0deg);
 }
