@@ -61,6 +61,7 @@ ul {
 }
 
 .video {
+	box-shadow: 1em 2em 5em 0.7em #111111;
 	margin-top: 8%;
 	border-radius: 50%;
 	object-fit: contain;
@@ -87,6 +88,7 @@ ul {
 		text-align: center;
 	}
 	.video {
+		box-shadow: 1em 2em 5em 0.7em #111111;
 		margin-left: 39%;
 		width: 70px;
 		height: 70px;
