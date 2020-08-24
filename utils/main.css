@@ -274,12 +274,12 @@ ul {
 
 .inline-photo.is-visible {
 	opacity: 1;
-	transform: rotateZ(-1deg);
+	transform: rotateZ(0deg);
 }
 
 .inline-photo2.is-visible {
 	opacity: 1;
-	transform: rotateZ(0deg);
+	transform: rotateZ(-0.2deg);
 }
 .inline-photo3.is-visible {
 	opacity: 1;
