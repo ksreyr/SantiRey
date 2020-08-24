@@ -18,6 +18,9 @@ body {
 #footerLetters {
 	color: #e0ece4;
 }
+.border {
+	border: 2px solid #e0ece4;
+}
 
 ul {
 	margin-right: 13vh;
@@ -147,6 +150,7 @@ ul {
 	max-width: max-content;
 }
 .icons:hover {
+	box-shadow: 0 0 0.5em 0.7em #e0ece4;
 	max-height: 250px;
 	min-height: 250px;
 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
@@ -155,7 +159,7 @@ ul {
 	transition: 0.3s;
 }
 .icons {
-	box-shadow: 0 0 0.5em 0.7em #e0ece4;
+	box-shadow: 0 0 0.5em 0.1em white;
 	max-height: 200px;
 	min-height: 200px;
 	object-fit: cover;
