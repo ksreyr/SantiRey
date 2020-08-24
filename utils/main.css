@@ -163,7 +163,10 @@ ul {
 	bottom: 0px;
 }
 #experienceCarten {
-	max-width: max-content;
+	min-height: fit-content;
+}
+#experienceCarten #text {
+	margin: 0;
 }
 .icons:hover {
 	box-shadow: 0 0 0.5em 0.7em #e0ece4;
