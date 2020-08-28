@@ -1,8 +1,8 @@
+# <div id= "Description"></div> 👋 Hi, im Kevin Santiago Rey, hier you can find a little about me.
+![](https://i.imgur.com/vDZtlsc.gif)
 
 
-
-## <div id= "Description"></div> 👋 Hi, im Kevin Santiago Rey, hier you can find a little about me.
-![](https://i.imgur.com/P6EtmaL.png)
+![Website](https://img.shields.io/website?up_message=Personal%20Website&url=https%3A%2F%2Fsantirey.github.io%2FSantiRey%2F) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SantiRey/SantiRey) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/SantiRey/SantiRey/v2.0/gh-pages)
 
 Computer science student and sound engineer. I am passionate about working with low-level languages like C ++ and functional languages. I have been working in the software development area for two years with technologies such as Java EE, JSF and Automated Test with Selenium.
 
@@ -11,13 +11,13 @@ If you have any questions or can help you just write me, I love being able to sh
 ### You can found me in social-networks
 I love making contributions in the programming area, for that reason I have various ways where I always try to contribute to the community. for example:
 
-Sharing Information in [twitter](https://twitter.com/ksreyr) as @ksreyr 🗣
+You can followme hier [![Twitter Follow](https://img.shields.io/twitter/follow/ksreyr.svg?style=social&label=Follow)](https://twitter.com/ksreyr) or find me as @ksreyr 🗣
 
-Sharing some hobbies in[flickr](https://www.flickr.com/people/santirey/) as Santiago Rey 👁
+Sharing some hobbies in [flickr](https://www.flickr.com/people/santirey/) as Santiago Rey 👁
 
 Writting about programming in [medium](https://medium.com/@ksreyr/) as @ksreyr 🧑‍💻
 
----
+
 ## <div id= "Content"></div> 2 Content
 1. [Description](#Description)
 2. [Content](#Content)
@@ -39,8 +39,8 @@ On the following page you can find more information about me, about some project
 
 If you have any questions don't hesitate to write me.
 ### Link to the website:
-
-* [Website link]( https://santirey.github.io/SantiRey/)
+Klick hier to go my Personal Website:
+ [Website link]( https://santirey.github.io/SantiRey/)
 
 
 <img src="https://i.imgur.com/ozwj5So.gif" width="500px" loop>
@@ -59,4 +59,5 @@ It is posible make pull request, aou are welcome to writte me. all kind of contr
 * [Fontawesome](https://fontawesome.com)
 
 ## <div id= "licens"></div> 7 Licens
-Images are reserved, but code it is free.
+Creative Commons Attribution 4.0
+Images are reserved.
