@@ -19,9 +19,9 @@ body {
 	color: #e0ece4;
 }
 #border {
-	border: 2px solid #e0ece4;
 	border-radius: 10px 20px 20px 5px;
-	box-shadow: 0.1em 0.1em 15px 0.0025px #e0ece4;
+	box-shadow: 5px 5px 17px 0.9px #b4ced6, -5px -5px 17px 0.9px #e0ece4;
+	border-radius: 10px;
 }
 #buttonshados {
 	box-shadow: 0.1em 0.1em 5px 0.0025px #e0ece4;
@@ -171,7 +171,7 @@ ul {
 	margin: 0;
 }
 .icons:hover {
-	box-shadow: 0 0 0.5em 0.7em #e0ece4;
+	box-shadow: 3px 3px 17px 2px #b4ced6, -3px -3px 17px 2px #e0ece4;
 	max-height: 250px;
 	min-height: 250px;
 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
