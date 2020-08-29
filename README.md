@@ -38,9 +38,7 @@ On the following page you can find more information about me, about some project
 * Web Games Development.
 
 If you have any questions don't hesitate to write me.
-### Link to the website:
-Klick hier to go my Personal Website:
- [Website link]( https://santirey.github.io/SantiRey/)
+### Klick hier to go my Personal Website: [Website link]( https://santirey.github.io/SantiRey/)
 
 
 <img src="https://i.imgur.com/ozwj5So.gif" width="500px" loop>
