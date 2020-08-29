@@ -20,6 +20,7 @@ body {
 }
 #border {
 	border-radius: 10px 20px 20px 5px;
+	border: 1px solid #e0ece4;
 	box-shadow: 5px 5px 17px 0.9px #b4ced6, -5px -5px 17px 0.9px #e0ece4;
 	border-radius: 10px;
 }
