@@ -1,4 +1,4 @@
-# <div id= "Description"></div> 👋 Hi, im Kevin Santiago Rey, hier you can find a little about me.
+# <div id= "Description"></div> 👋 Hi, im Kevin Santiago Rey, here you can find a little about me.
 ![](https://i.imgur.com/vDZtlsc.gif)
 
 
@@ -11,7 +11,7 @@ If you have any questions or can help you just write me, I love being able to sh
 ### You can found me in social-networks
 I love making contributions in the programming area, for that reason I have various ways where I always try to contribute to the community. for example:
 
-You can followme hier [![Twitter Follow](https://img.shields.io/twitter/follow/ksreyr.svg?style=social&label=Follow)](https://twitter.com/ksreyr) or find me as @ksreyr 🗣
+You can followme here [![Twitter Follow](https://img.shields.io/twitter/follow/ksreyr.svg?style=social&label=Follow)](https://twitter.com/ksreyr) or find me as @ksreyr 🗣
 
 Sharing some hobbies in [flickr](https://www.flickr.com/people/santirey/) as Santiago Rey 👁
 
@@ -38,7 +38,7 @@ On the following page you can find more information about me, about some project
 * Web Games Development.
 
 If you have any questions don't hesitate to write me.
-### Klick hier to go my Personal Website: [Website link]( https://santirey.github.io/SantiRey/)
+### Klick here to go my Personal Website: [Website link]( https://santirey.github.io/SantiRey/)
 
 
 <img src="https://i.imgur.com/ozwj5So.gif" width="500px" loop>
