@@ -4,6 +4,8 @@
 
 ![Website](https://img.shields.io/website?up_message=Personal%20Website&url=https%3A%2F%2Fsantirey.github.io%2FSantiRey%2F) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/SantiRey/SantiRey) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/SantiRey/SantiRey/v2.0/gh-pages)
 
+![Santiago Rey's github stats](https://github-readme-stats.vercel.app/api?username=santirey)
+
 Computer science student and sound engineer. I am passionate about working with low-level languages like C ++ and functional languages. I have been working in the software development area for two years with technologies such as Java EE, JSF and Automated Test with Selenium.
 
 If you have any questions or can help you just write me, I love being able to share and help others. If you have any suggestions and comments, they are not only totally welcome, but also highly appreciated.
@@ -38,6 +40,8 @@ On the following page you can find more information about me, about some project
 * Web Games Development.
 
 If you have any questions don't hesitate to write me.
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=santirey)](https://github.com/santirey)
 # Website
 ### Klick here to go my Personal Website: [Website link]( https://santirey.github.io/SantiRey/)
 
