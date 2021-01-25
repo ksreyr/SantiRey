@@ -1,8 +1,6 @@
-stages:
-  - deploy
+image: centos
 
 pages:
-  stage: delopy
   script:
     - mkdir .public
     - cp -r . .public
