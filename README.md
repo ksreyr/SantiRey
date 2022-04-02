@@ -11,6 +11,7 @@ Computer science student and sound engineer. I am passionate about working with 
 If you have any questions or can help you just write me, I love being able to share and help others. If you have any suggestions and comments, they are not only totally welcome, but also highly appreciated.
 
 ### You can found me in social-networks
+
 I love making contributions in the programming area, for that reason I have various ways where I always try to contribute to the community. for example:
 
 You can followme here [![Twitter Follow](https://img.shields.io/twitter/follow/ksreyr.svg?style=social&label=Follow)](https://twitter.com/ksreyr) or find me as @ksreyr 🗣
