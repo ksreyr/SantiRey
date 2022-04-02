@@ -754,7 +754,7 @@ FodyWeavers.xsd
 # Local History for Visual Studio Code
 
 # Windows Installer files from build outputs
-
+.idea
 # JetBrains Rider
 *.sln.iml
 

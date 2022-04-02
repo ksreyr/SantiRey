@@ -1,5 +1,5 @@
 FROM node as builderFront
-RUN git clone https://github.com/SantiRey/SantiRey.git /home/app/
+RUN git clone https://github.com/SantiRey/SantiRey.git /home/html/
 
-FROM nginx 
-COPY --from=builderFront /home/app/ /usr/share/nginx/html
+FROM nginx
+COPY --from=builderFront /home/html/ /usr/share/nginx/html
