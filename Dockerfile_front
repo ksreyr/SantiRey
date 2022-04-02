@@ -1,7 +1,5 @@
 FROM node as builderFront
-RUN git clone https://github.com/ParadigmaIndie/CampusParadigmaFrontend.git /home/app/
-WORKDIR /home/app/CampusParadigmaFrontend
-RUN npm install && npm run build
+RUN git clone https://github.com/SantiRey/SantiRey.git /home/app/
 
 FROM nginx 
-COPY --from=builderFront /home/app/dist /usr/share/nginx/html
+COPY --from=builderFront /home/app/ /usr/share/nginx/html
