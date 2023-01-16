@@ -1,12 +1,15 @@
-image: centos
+stages:
+  - build
+  - test
+  - deploy
 
-pages:
+
+
+build_a:
+  stage: build
+  image:
+    name: docker:20.10.16
   script:
-    - mkdir .public
-    - cp -r ./* .public
-    - mv .public public
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin
+    - docker build -t $CI_REGISTRY_IMAGE
+    - docker push $CI_REGISTRY_IMAGE
