@@ -3,7 +3,7 @@ stages:
   - test
   - deploy
 
-build_a:
+.build_a:
   stage: build
   image: docker:20.10.10
   services:
@@ -21,5 +21,6 @@ deploy_a:
     - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
     - chmod +x ./kubectl && mv ./kubectl /usr/local/bin/kubectl
     - mkdir -p $HOME/.kube
+    - echo -n $KUBE_CONFIG 
     - echo -n $KUBE_CONFIG | base64 -d > $HOME/.kube/config
     - kubectl config view
