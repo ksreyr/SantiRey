@@ -22,4 +22,4 @@ deploy_a:
     - chmod +x ./kubectl && mv ./kubectl /usr/local/bin/kubectl
     - mkdir -p $HOME/.kube
     - echo -n $KUBE_CONFIG >> $HOME/.kube/config.yml
-    - kubectl config view
+    - kubectl get pods
