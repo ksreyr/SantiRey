@@ -9,9 +9,10 @@ build_image:
   services:
       - docker:20.10.10-dind
   script:
-    - docker build -t "kevinsantiagorey/personalwebsite:v1" -f Dockerfile_front .
+   - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER registry-1.docker.io --password-stdin
+    - docker build --pull -t "kevinsantiagorey/personalwebsite:v1" -f Dockerfile_front .
     - docker images
-    - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER registry-1.docker.io --password-stdin && docker push kevinsantiagorey/personalwebsite:v1 
+    - docker push kevinsantiagorey/personalwebsite:v1 
 
 deploy_k8s:
   image: docker:20.10.10
