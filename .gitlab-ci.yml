@@ -9,9 +9,9 @@ build_image:
   services:
       - docker:20.10.10-dind
   script:
-    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER registry.gitlab.com --password-stdin
-    - docker build -t "$CI_REGISTRY_IMAGE:v1" -f Dockerfile_front .
-    - docker push "$CI_REGISTRY_IMAGE:v1" 
+    - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER registry-1.docker.io --password-stdin
+    - docker build -t "$DOCKER_REGISTRY_USER/perosnalwebsite:v1" -f Dockerfile_front .
+    - docker push "$DOCKER_REGISTRY_USER/perosnalwebsite:v1" 
 
 deploy_k8s:
   image: docker:20.10.10
@@ -25,5 +25,5 @@ deploy_k8s:
     - mkdir -p $HOME/.kube
     - echo "$KUBE_CONFIG" >> config
     - mv config ~/.kube/
-    - docker login -u $REGISTRY_USER -p $REGISTRY_KEY registry.gitlab.com
+    - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER registry-1.docker.io --password-stdin
     - cd k8s/app && kubectl apply -f deployment.yml
