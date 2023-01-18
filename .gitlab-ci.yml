@@ -14,7 +14,7 @@ build_image:
     - docker push "$CI_REGISTRY_IMAGE:v1" 
 
 deploy_k8s:
-  image: alpine
+  image: docker:20.10.10
   stage: deploy
   script:
     - apk update  && apk add --no-cache curl
