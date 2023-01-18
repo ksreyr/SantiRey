@@ -26,4 +26,4 @@ deploy_k8s:
     - echo "$KUBE_CONFIG" >> config
     - mv config ~/.kube/
     - docker login -u $REGISTRY_USER -p $REGISTRY_KEY registry.gitlab.com
-    - cd k8s/app && kubectl apply -f deployment.yml
+    - ls -la
