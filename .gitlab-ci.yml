@@ -3,7 +3,7 @@ stages:
   - test
   - deploy
 
-.build_a:
+build_a:
   stage: build
   image: docker:20.10.10
   services:
