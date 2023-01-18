@@ -5,7 +5,8 @@
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-k8s/*
+k8s/services
+k8s/app/service.yml
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -762,4 +763,4 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,visualstudio,visualstudiocode,macos,node,java,vuejs,linux,windows
-k8s/app/deployment.yml
+

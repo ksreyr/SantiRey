@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blogpersonal
+spec:
+  selector:
+    matchLabels:
+      app: blogpersonal
+  template:
+    metadata:
+      annotations:
+        kubernetes.io/change-cause: version v1.2
+      labels:
+        app: blogpersonal
+    spec:
+      containers:
+      - name: blogpersonal
+        image: registry.gitlab.com/personalwebsite3/personalwebsite
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "300m"
+        ports:
+        - containerPort: 80
