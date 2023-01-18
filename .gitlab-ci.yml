@@ -10,7 +10,7 @@ build_image:
       - docker:20.10.10-dind
   script:
    - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER registry-1.docker.io --password-stdin
-    - docker build --pull -t "kevinsantiagorey/personalwebsite:v1" -f Dockerfile_front .
+    - docker build -t "kevinsantiagorey/personalwebsite:v1" -f Dockerfile_front .
     - docker images
     - docker push kevinsantiagorey/personalwebsite:v1 
 
