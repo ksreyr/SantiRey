@@ -23,4 +23,5 @@ deploy_k8s:
     - mkdir -p $HOME/.kube
     - echo "$KUBE_CONFIG" >> config
     - mv config ~/.kube/
-    - kubectl get pods
+    - docker login -u $REGISTRY_KEY -p $REGISTRY_USER registry.example.com
+    - cd k8s/app && kubectl apply -f deployment.yml
