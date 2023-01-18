@@ -3,7 +3,7 @@ stages:
   - test
   - deploy
 
-build_a:
+build_image:
   stage: build
   image: docker:20.10.10
   services:
@@ -11,9 +11,9 @@ build_a:
   script:
     - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER registry.gitlab.com --password-stdin
     - docker build -t "$CI_REGISTRY_IMAGE:v1" -f Dockerfile_front .
-    - docker push "$CI_REGISTRY_IMAGE:v1"" 
+    - docker push "$CI_REGISTRY_IMAGE:v1" 
 
-deploy_a:
+deploy_k8s:
   image: alpine
   stage: deploy
   script:
