@@ -1,5 +1,5 @@
 FROM node as builderFront
-RUN git clone https://$REGISTRY_USER:$REGISTRY_KEY@gitlab.com:personalwebsite3/personalwebsite.git /home/html/
+RUN git clone https://$REGISTRY_USER:$REGISTRY_KEY@gitlab.com/personalwebsite3/personalwebsite.git /home/html/
 
 FROM nginx
 COPY --from=builderFront /home/html/ /usr/share/nginx/html
