@@ -2,6 +2,7 @@ FROM node as builderFront
 RUN git clone https://gitlab+deploy-token-1692497:HUx5yVvs-Lu_4cHZdxPL@gitlab.com/personalwebsite3/personalwebsite.git /home/html/
 
 FROM nginx
+RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builderFront /home/html/firstPage/ /usr/share/nginx/html
 EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
