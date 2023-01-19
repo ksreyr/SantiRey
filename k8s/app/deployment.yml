@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: blogpersonal
-        image: registry.gitlab.com/personalwebsite3/personalwebsite:v1
+        image: kevinsantiagorey/personalwebsite:v1
         resources:
           limits:
             memory: "128Mi"
