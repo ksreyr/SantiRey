@@ -10,9 +10,9 @@ build_image_stagin:
       - docker:20.10.10-dind
   script:
     - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
-    - docker build  --build-arg REGISTRY_KEY=$REGISTRY_KEY -t "kevinsantiagorey/personalwebsite:SNAPSHOT" -f Dockerfile_front .
+    - docker build  --build-arg REGISTRY_KEY=$REGISTRY_KEY -t "kevinsantiagorey/personalwebsite:snapshot" -f Dockerfile_front .
     - docker images
-    - docker push kevinsantiagorey/personalwebsite:SNAPSHOT 
+    - docker push kevinsantiagorey/personalwebsite:snapshot 
 
 build_image_realese:
   stage: build
