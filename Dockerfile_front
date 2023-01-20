@@ -4,7 +4,5 @@ RUN git clone https://gitlab+deploy-token-1692497:HUx5yVvs-Lu_4cHZdxPL@gitlab.co
 FROM nginx
 RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builderFront /home/html/firstPage/ /usr/share/nginx/html
-RUN cd usr/share/nginx/html && cat index.html | grep RC1  >> log.txt
-RUN echo 'log.txt'
 EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
