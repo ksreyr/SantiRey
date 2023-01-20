@@ -42,7 +42,7 @@ deploy_k8s_snapshot:
     - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
     - cd k8s/app/stagin && kubectl apply -f deployment.yml
   needs:
-    - build_image_stagin
+    - build_image_snapshot
 
 deploy_k8s_realese:
   image: docker:20.10.10
