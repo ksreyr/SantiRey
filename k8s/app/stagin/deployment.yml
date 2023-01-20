@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: blogpersonal-SNAPSHOT
+  name: blogpersonal-snapshot
 spec:
   selector:
     matchLabels:
-      app: blogpersonal-SNAPSHOT
+      app: blogpersonal-snapshot
   template:
     metadata:
       annotations:
         kubernetes.io/change-cause: version v1.2
       labels:
-        app: blogpersonal-SNAPSHOT
+        app: blogpersonal-snapshot
     spec:
       containers:
-      - name: blogpersonal-SNAPSHOT
-        image: kevinsantiagorey/personalwebsite:SNAPSHOT
+      - name: blogpersonal-snapshot
+        image: kevinsantiagorey/personalwebsite:snapshot
         resources:
           limits:
             memory: "128Mi"
