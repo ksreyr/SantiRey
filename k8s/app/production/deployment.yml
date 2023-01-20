@@ -16,6 +16,7 @@ spec:
       containers:
       - name: blogpersonal
         image: kevinsantiagorey/personalwebsite:v1
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"
