@@ -3,7 +3,7 @@ stages:
   - test
   - deploy
 
-build_image_stagin:
+build_image_snapshot:
   stage: build
   image: docker:20.10.10
   services:
@@ -27,7 +27,7 @@ build_image_realese:
   rules:
     - when: manual
 
-deploy_k8s_SNAPSHOT:
+deploy_k8s_snapshot:
   image: docker:20.10.10
   services:
       - docker:20.10.10-dind
@@ -44,7 +44,7 @@ deploy_k8s_SNAPSHOT:
   needs:
     - build_image_stagin
 
-deploy_k8s_relese:
+deploy_k8s_realese:
   image: docker:20.10.10
   services:
       - docker:20.10.10-dind
@@ -59,4 +59,4 @@ deploy_k8s_relese:
     - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
     - cd k8s/app/production && kubectl apply -f deployment.yml
   needs:
-    - build_image_stagin
+    - build_image_realese
