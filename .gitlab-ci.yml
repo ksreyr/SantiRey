@@ -58,3 +58,5 @@ deploy_k8s_relese:
     - mv config ~/.kube/
     - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
     - cd k8s/app/production && kubectl apply -f deployment.yml
+  needs:
+    - build_image_stagin
