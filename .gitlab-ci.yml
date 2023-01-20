@@ -3,7 +3,18 @@ stages:
   - test
   - deploy
 
-build_image:
+build_image_stagin:
+  stage: build
+  image: docker:20.10.10
+  services:
+      - docker:20.10.10-dind
+  script:
+    - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
+    - docker build  --build-arg REGISTRY_KEY=$REGISTRY_KEY -t "kevinsantiagorey/personalwebsite:SNAPSHOT" -f Dockerfile_front .
+    - docker images
+    - docker push kevinsantiagorey/personalwebsite:SNAPSHOT 
+
+build_image_realese:
   stage: build
   image: docker:20.10.10
   services:
@@ -13,8 +24,10 @@ build_image:
     - docker build  --build-arg REGISTRY_KEY=$REGISTRY_KEY -t "kevinsantiagorey/personalwebsite:v1" -f Dockerfile_front .
     - docker images
     - docker push kevinsantiagorey/personalwebsite:v1 
+  rules:
+    - when: manual
 
-deploy_k8s:
+deploy_k8s_SNAPSHOT:
   image: docker:20.10.10
   services:
       - docker:20.10.10-dind
@@ -27,4 +40,19 @@ deploy_k8s:
     - echo "$KUBE_CONFIG" >> config
     - mv config ~/.kube/
     - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
-    - cd k8s/app && kubectl apply -f deployment.yml
+    - cd k8s/app/stagin && kubectl apply -f deployment.yml
+
+deploy_k8s_relese:
+  image: docker:20.10.10
+  services:
+      - docker:20.10.10-dind
+  stage: deploy
+  script:
+    - apk update  && apk add --no-cache curl
+    - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+    - chmod +x ./kubectl && mv ./kubectl /usr/local/bin/kubectl
+    - mkdir -p $HOME/.kube
+    - echo "$KUBE_CONFIG" >> config
+    - mv config ~/.kube/
+    - echo $DOCKER_REGISTRY_KEY | docker login -u $DOCKER_REGISTRY_USER --password-stdin
+    - cd k8s/app/production && kubectl apply -f deployment.yml
